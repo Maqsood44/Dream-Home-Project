@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dream Home</title>
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <div class="logo">
+            <h1 draggable="false"><a href="#">Dream Home</a></h1>
+        </div>
+        <input type="checkbox" id="menu" class="menu">
+        <label class="nav-toggle" for="menu"><i class="fa-solid fa-bars"></i></label>
+        <div class="tabs">
+            <ul>
+                <li><a href="#Home" class="active">Home</a></li>
+                <li>Rent<i class="fa-solid fa-caret-down"></i>
+                    <ul>
+                        <li><a href="">Flat</a></li>
+                        <li><a href="">Commercial</a></li>
+                        <li><a href="">Banglow</a></li>
+                    </ul>
+                </li>
+                <li>Buy<i class="fa-solid fa-caret-down"></i>
+                    <ul>
+                        <li><a href="">Flat</a></li>
+                        <li><a href="">Commercial</a></li>
+                        <li><a href="">Banglow</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="nabbtns">
+            <input type="button" value="Sign in" draggable="false">
+            <input type="button" value="Sign Up" draggable="false">
+        </div>
+
+    </nav>
+
+    <!-- crausal -->
+    <section class="crausal">
+        <div class="crausal-content">
+            <h1>Find Your <SPAN>dream home</SPAN> in Pakistan</h1>
+            <p>With thousands of homes, we have just the right one for you</p>
+            <div class="search-section">
+                <ul>
+                    <input type="search" placeholder="Area like (10 x 10)" class="input">
+                    </li>
+                    <li>
+                        <select name="UsedCity" id="UsedCity" class="input option">
+                            <option value="">All Cities</option>
+                            <optgroup label="Popular Cities">
+                                <option value="karachi">Karachi</option>
+                                <option value="lahore">Lahore</option>
+                                <option value="islamabad">Islamabad</option>
+                                <option value="rawalpindi">Rawalpindi</option>
+                                <option value="peshawar">Peshawar</option>
+                            </optgroup>
+                            <optgroup label="Other Cities">
+                                <option value="abbottabad">Abbottabad</option>
+                                <option value="abdul-hakeem">Abdul Hakeem</option>
+                                <option value="adda-jahan-khan">Adda jahan khan</option>
+                                <option value="adda-shaiwala">Adda shaiwala</option>
+                                <option value="ahmed-pur-east">Ahmed Pur East</option>
+                                <option value="ahmedpur-lamma">Ahmedpur Lamma</option>
+                                <option value="akora-khattak">Akora khattak</option>
+                                <option value="ali-chak">Ali chak</option>
+                                <option value="alipur-chatta">Alipur Chatta</option>
+                                <option value="allahabad">Allahabad</option>
+                                <option value="amangarh">Amangarh</option>
+                                <option value="arifwala">Arifwala</option>
+                                <option value="attock">Attock</option>
+                                <option value="babarloi">Babarloi</option>
+                                <option value="babri-banda">Babri banda</option>
+                                <option value="badin">Badin</option>
+                                <option value="bahawalnagar">Bahawalnagar</option>
+                                <option value="bahawalpur">Bahawalpur</option>
+                                <option value="balakot">Balakot</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Price Range" class="input">
+                    </li>
+                    <li id="search"><i class="fas fa-search"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ad section -->
+    <section class="ads margin">
+        <h2>Pakistan's Luxury Hotels</h2>
+        <button data-aos="flip-up">learn More</button>
+        <div class="icon">
+            <i class="fa-solid fa-exclamation"></i>
+            <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+    </section>
+
+    <!-- Card section -->
+    <section class="rent-section margin">
+
+        <h1>Feature Homes</h1>
+        <div class="card-section">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/1.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/2.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/3.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/4.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/5.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/6.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/7.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/8.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/9.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/14.jpg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/11.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+            <!-- Card 12 -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="Images/rent/12.jpeg" alt="No photo">
+                </div>
+                <div class="card-body">
+                    <div class="grid">
+                        <div>
+                            <h3>Owner name:</h3>
+                        </div>
+                        <div>
+                            <p id="name">Maqsood Ahmad</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div class="grid">
+                        <h3>Location:</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="grid">
+                        <h3>Area:</h3>
+                        <p>100 x 100 yard</p>
+                    </div>
+                    <div class="grid">
+                        <div>
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            <span><i class="fa-regular fa-envelope"></i></span>
+                            <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                        </div>
+                    </div>
+                    <h3>Description:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque eveniet eos ad? Error
+                        repudiandae sunt voluptate.</p><a href="">learn more!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us section -->
+    <section class="about-us">
+        <div class="about-image">
+            <img src="Images/rent/13.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quidem totam dicta beatae vel laborum sequi
+                recusandae voluptate culpa aspernatur voluptatibus eveniet reprehenderit magni, aut odio commodi velit
+                non deleniti maiores ad! Ea earum, molestias deleniti a fuga vitae ipsam fugiat aliquam minus tempore?
+                Maiores.</p>
+            <a href="">Learn More! <span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <section>
+            <div class="footer-section">
+                <div class="footer-about">
+                    <h1>About Dream Home</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, labore rem quam cum aperiam
+                        consequatur illo molestiae hic aliquam, ipsam enim cupiditate libero ipsa reiciendis?</p>
+                </div>
+                <div class="footer-company">
+                    <h1>Company</h1>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Help & Support</a></li>
+                        <li><a href="">Advertise On Dear Home</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-detail">
+                    <h1>Head Office</h1>
+                    <ul>
+                        <li> <span><i class="fa-solid fa-location-dot"></i>Pearl One, 94-B/I, MM Alam Road,
+                                Gulberg III, Lahore, Pakistan </span></li>
+                        <li><span><i class="fa-solid fa-phone"></i>+92 304 9750385</span></li>
+                        <li><span><i class="fa-solid fa-envelope"></i><a href="Email Us">Email Us</a></span></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <div class="social">
+                        <h1>Follow Us On</h1>
+                        <a href=""><img src="Icons/facebook.svg" alt=""></a>
+                        <a href=""><img src="Icons/instagram.svg" alt=""></a>
+                        <a href=""><img src="Icons/youtube.svg" alt=""></a>
+                        <a href=""><img src="Icons/twitter.svg" alt=""></a>
+                        <a href=""><img src="Icons/linkdin.svg" alt=""></a>
+                    </div>
+                    <div class="download">
+                        <h1>Download Mobile App</h1>
+                        <a href=""><img src="Icons/playstore.png" alt=""></a>
+                        <a href=""><img src="Icons/appstore.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Copyrights &copy; 2023 - All Rights Reserved.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
